@@ -1,375 +1,397 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>プライバシーポリシー — マナーカメラ</title>
-  <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>プライバシーポリシー — マナーカメラ</title>
+    <style>
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
 
-    :root {
-      --bg:        #ffffff;
-      --surface:   #f7f7f7;
-      --text:      #1a1a1a;
-      --sub:       #6b7280;
-      --border:    #e5e5e5;
-      --accent:    #000000;
-    }
-
-    @media (prefers-color-scheme: dark) {
       :root {
-        --bg:      #111111;
-        --surface: #1c1c1c;
-        --text:    #f0f0f0;
-        --sub:     #9ca3af;
-        --border:  #2e2e2e;
-        --accent:  #ffffff;
+        --bg: #ffffff;
+        --surface: #f7f7f7;
+        --text: #1a1a1a;
+        --sub: #6b7280;
+        --border: #e5e5e5;
+        --accent: #000000;
       }
-    }
 
-    html { font-size: 16px; scroll-behavior: smooth; }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #111111;
+          --surface: #1c1c1c;
+          --text: #f0f0f0;
+          --sub: #9ca3af;
+          --border: #2e2e2e;
+          --accent: #ffffff;
+        }
+      }
 
-    body {
-      font-family: 'Noto Sans JP', 'Hiragino Sans', 'Yu Gothic UI', sans-serif;
-      background-color: var(--bg);
-      color: var(--text);
-      line-height: 1.8;
-      padding-bottom: 80px;
-    }
+      html {
+        font-size: 16px;
+        scroll-behavior: smooth;
+      }
 
-    /* ── ヘッダー ── */
-    header {
-      border-bottom: 1px solid var(--border);
-      padding: 20px 24px;
-      display: flex;
-      align-items: center;
-      gap: 12px;
-    }
+      body {
+        font-family:
+          "Noto Sans JP", "Hiragino Sans", "Yu Gothic UI", sans-serif;
+        background-color: var(--bg);
+        color: var(--text);
+        line-height: 1.8;
+        padding-bottom: 80px;
+      }
 
-    .app-icon {
-      width: 36px;
-      height: 36px;
-      background: var(--accent);
-      border-radius: 8px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 18px;
-    }
+      /* ── ヘッダー ── */
+      header {
+        border-bottom: 1px solid var(--border);
+        padding: 20px 24px;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
 
-    .app-name {
-      font-size: 15px;
-      font-weight: 700;
-      color: var(--text);
-      letter-spacing: 0.5px;
-    }
+      .app-icon {
+        width: 36px;
+        height: 36px;
+        background: var(--accent);
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 18px;
+      }
 
-    /* ── メインコンテンツ ── */
-    main {
-      max-width: 680px;
-      margin: 0 auto;
-      padding: 48px 24px 0;
-    }
+      .app-name {
+        font-size: 15px;
+        font-weight: 700;
+        color: var(--text);
+        letter-spacing: 0.5px;
+      }
 
-    .page-title {
-      font-size: 28px;
-      font-weight: 700;
-      letter-spacing: -0.5px;
-      color: var(--text);
-      margin-bottom: 8px;
-    }
+      /* ── メインコンテンツ ── */
+      main {
+        max-width: 680px;
+        margin: 0 auto;
+        padding: 48px 24px 0;
+      }
 
-    .updated {
-      font-size: 13px;
-      color: var(--sub);
-      margin-bottom: 40px;
-    }
+      .page-title {
+        font-size: 28px;
+        font-weight: 700;
+        letter-spacing: -0.5px;
+        color: var(--text);
+        margin-bottom: 8px;
+      }
 
-    /* ── ハイライトボックス ── */
-    .highlight {
-      background: var(--surface);
-      border-left: 3px solid var(--accent);
-      border-radius: 0 8px 8px 0;
-      padding: 20px 24px;
-      margin-bottom: 40px;
-    }
+      .updated {
+        font-size: 13px;
+        color: var(--sub);
+        margin-bottom: 40px;
+      }
 
-    .highlight p {
-      font-size: 15px;
-      color: var(--text);
-      line-height: 1.7;
-    }
+      /* ── ハイライトボックス ── */
+      .highlight {
+        background: var(--surface);
+        border-left: 3px solid var(--accent);
+        border-radius: 0 8px 8px 0;
+        padding: 20px 24px;
+        margin-bottom: 40px;
+      }
 
-    .highlight strong {
-      font-weight: 700;
-    }
+      .highlight p {
+        font-size: 15px;
+        color: var(--text);
+        line-height: 1.7;
+      }
 
-    /* ── セクション ── */
-    section {
-      margin-bottom: 40px;
-    }
+      .highlight strong {
+        font-weight: 700;
+      }
 
-    h2 {
-      font-size: 18px;
-      font-weight: 700;
-      color: var(--text);
-      margin-bottom: 12px;
-      padding-bottom: 8px;
-      border-bottom: 1px solid var(--border);
-    }
+      /* ── セクション ── */
+      section {
+        margin-bottom: 40px;
+      }
 
-    p {
-      font-size: 15px;
-      color: var(--text);
-      line-height: 1.8;
-      margin-bottom: 12px;
-    }
+      h2 {
+        font-size: 18px;
+        font-weight: 700;
+        color: var(--text);
+        margin-bottom: 12px;
+        padding-bottom: 8px;
+        border-bottom: 1px solid var(--border);
+      }
 
-    p:last-child { margin-bottom: 0; }
+      p {
+        font-size: 15px;
+        color: var(--text);
+        line-height: 1.8;
+        margin-bottom: 12px;
+      }
 
-    /* ── テーブル ── */
-    .table-wrap {
-      overflow-x: auto;
-      margin-bottom: 16px;
-    }
+      p:last-child {
+        margin-bottom: 0;
+      }
 
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      font-size: 14px;
-    }
+      /* ── テーブル ── */
+      .table-wrap {
+        overflow-x: auto;
+        margin-bottom: 16px;
+      }
 
-    th {
-      background: var(--surface);
-      color: var(--sub);
-      font-weight: 700;
-      font-size: 12px;
-      letter-spacing: 0.5px;
-      text-transform: uppercase;
-      padding: 10px 14px;
-      text-align: left;
-      border-bottom: 1px solid var(--border);
-    }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 14px;
+      }
 
-    td {
-      padding: 12px 14px;
-      border-bottom: 1px solid var(--border);
-      color: var(--text);
-      vertical-align: top;
-    }
+      th {
+        background: var(--surface);
+        color: var(--sub);
+        font-weight: 700;
+        font-size: 12px;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        padding: 10px 14px;
+        text-align: left;
+        border-bottom: 1px solid var(--border);
+      }
 
-    tr:last-child td { border-bottom: none; }
+      td {
+        padding: 12px 14px;
+        border-bottom: 1px solid var(--border);
+        color: var(--text);
+        vertical-align: top;
+      }
 
-    .badge {
-      display: inline-block;
-      padding: 2px 10px;
-      border-radius: 9999px;
-      font-size: 12px;
-      font-weight: 700;
-    }
+      tr:last-child td {
+        border-bottom: none;
+      }
 
-    .badge--none {
-      background: #edf7ee;
-      color: #41a34d;
-    }
+      .badge {
+        display: inline-block;
+        padding: 2px 10px;
+        border-radius: 9999px;
+        font-size: 12px;
+        font-weight: 700;
+      }
 
-    @media (prefers-color-scheme: dark) {
       .badge--none {
-        background: #052e16;
-        color: #4ade80;
+        background: #edf7ee;
+        color: #41a34d;
       }
-    }
 
-    /* ── お問い合わせ ── */
-    .contact-box {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      padding: 24px;
-    }
+      @media (prefers-color-scheme: dark) {
+        .badge--none {
+          background: #052e16;
+          color: #4ade80;
+        }
+      }
 
-    .contact-box a {
-      color: var(--accent);
-      text-decoration: none;
-      font-weight: 700;
-      border-bottom: 1px solid var(--border);
-      padding-bottom: 1px;
-    }
+      /* ── お問い合わせ ── */
+      .contact-box {
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        padding: 24px;
+      }
 
-    /* ── フッター ── */
-    footer {
-      margin-top: 64px;
-      padding: 24px;
-      border-top: 1px solid var(--border);
-      text-align: center;
-      font-size: 12px;
-      color: var(--sub);
-    }
-  </style>
-</head>
-<body>
+      .contact-box a {
+        color: var(--accent);
+        text-decoration: none;
+        font-weight: 700;
+        border-bottom: 1px solid var(--border);
+        padding-bottom: 1px;
+      }
 
-  <header>
-    <div class="app-icon">📷</div>
-    <span class="app-name">マナーカメラ</span>
-  </header>
+      /* ── フッター ── */
+      footer {
+        margin-top: 64px;
+        padding: 24px;
+        border-top: 1px solid var(--border);
+        text-align: center;
+        font-size: 12px;
+        color: var(--sub);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="app-icon">📷</div>
+      <span class="app-name">マナーカメラ</span>
+    </header>
 
-  <main>
-    <h1 class="page-title">プライバシーポリシー</h1>
-    <p class="updated">最終更新日：2026年4月10日</p>
+    <main>
+      <h1 class="page-title">プライバシーポリシー</h1>
+      <p class="updated">最終更新日：2026年4月10日</p>
 
-    <div class="highlight">
-      <p>
-        <strong>マナーカメラは、あなたの個人情報・写真・位置情報を一切収集しません。</strong><br>
-        撮影した写真はお使いのデバイスにのみ保存され、外部サーバーへの送信は行いません。
-      </p>
-    </div>
-
-    <!-- 1 -->
-    <section>
-      <h2>1. 基本方針</h2>
-      <p>
-        マナーカメラ（以下「本アプリ」）は、美術館・寺社仏閣などの静寂な場所でのマナー撮影を目的としたカメラアプリです。
-        開発者（以下「当方」）は、ユーザーのプライバシー保護を最優先に考え、
-        個人情報の取得を最小限に抑えた設計を採用しています。
-      </p>
-    </section>
-
-    <!-- 2 -->
-    <section>
-      <h2>2. 取得する情報</h2>
-      <div class="table-wrap">
-        <table>
-          <thead>
-            <tr>
-              <th>情報の種類</th>
-              <th>取得</th>
-              <th>備考</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>氏名・メールアドレス等の個人情報</td>
-              <td><span class="badge badge--none">収集なし</span></td>
-              <td>アカウント登録不要</td>
-            </tr>
-            <tr>
-              <td>撮影した写真・動画</td>
-              <td><span class="badge badge--none">収集なし</span></td>
-              <td>デバイス内にのみ保存</td>
-            </tr>
-            <tr>
-              <td>位置情報（GPS）</td>
-              <td><span class="badge badge--none">収集なし</span></td>
-              <td>位置情報の権限を要求しません</td>
-            </tr>
-            <tr>
-              <td>利用状況・分析データ</td>
-              <td><span class="badge badge--none">収集なし</span></td>
-              <td>アナリティクスツール不使用</td>
-            </tr>
-            <tr>
-              <td>広告識別子</td>
-              <td><span class="badge badge--none">収集なし</span></td>
-              <td>広告非表示・広告SDKなし</td>
-            </tr>
-          </tbody>
-        </table>
+      <div class="highlight">
+        <p>
+          <strong
+            >マナーカメラは、あなたの個人情報・写真・位置情報を一切収集しません。</strong
+          ><br />
+          撮影した写真はお使いのデバイスにのみ保存され、外部サーバーへの送信は行いません。
+        </p>
       </div>
-    </section>
 
-    <!-- 3 -->
-    <section>
-      <h2>3. 要求する権限</h2>
-      <div class="table-wrap">
-        <table>
-          <thead>
-            <tr>
-              <th>権限</th>
-              <th>用途</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>カメラ</td>
-              <td>撮影機能の動作に必要です</td>
-            </tr>
-            <tr>
-              <td>ストレージ（写真の保存）</td>
-              <td>撮影した写真をデバイスに保存するために必要です</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <p>上記以外の権限は一切要求しません。</p>
-    </section>
+      <!-- 1 -->
+      <section>
+        <h2>1. 基本方針</h2>
+        <p>
+          マナーカメラ（以下「本アプリ」）は、美術館・寺社仏閣などの静寂な場所でのマナー撮影を目的としたカメラアプリです。
+          開発者（以下「当方」）は、ユーザーのプライバシー保護を最優先に考え、
+          個人情報の取得を最小限に抑えた設計を採用しています。
+        </p>
+      </section>
 
-    <!-- 4 -->
-    <section>
-      <h2>4. 第三者への情報提供</h2>
-      <p>
-        当方は取得した情報を第三者に販売・提供・開示することはありません。
-        本アプリには広告ネットワーク・アナリティクスSDK・外部APIへの通信機能が含まれていません。
-      </p>
-    </section>
+      <!-- 2 -->
+      <section>
+        <h2>2. 取得する情報</h2>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>情報の種類</th>
+                <th>取得</th>
+                <th>備考</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>氏名・メールアドレス等の個人情報</td>
+                <td><span class="badge badge--none">収集なし</span></td>
+                <td>アカウント登録不要</td>
+              </tr>
+              <tr>
+                <td>撮影した写真・動画</td>
+                <td><span class="badge badge--none">収集なし</span></td>
+                <td>デバイス内にのみ保存</td>
+              </tr>
+              <tr>
+                <td>位置情報（GPS）</td>
+                <td><span class="badge badge--none">収集なし</span></td>
+                <td>位置情報の権限を要求しません</td>
+              </tr>
+              <tr>
+                <td>利用状況・分析データ</td>
+                <td><span class="badge badge--none">収集なし</span></td>
+                <td>アナリティクスツール不使用</td>
+              </tr>
+              <tr>
+                <td>広告識別子</td>
+                <td><span class="badge badge--none">収集なし</span></td>
+                <td>広告非表示・広告SDKなし</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
 
-    <!-- 5 -->
-    <section>
-      <h2>5. 寄付について</h2>
-      <p>
-        本アプリは任意の寄付によって運営されています。
-        寄付の受付はアプリ外の外部決済サービスを通じて行われます。
-        寄付時に入力する情報（氏名・メールアドレス等）は、当該決済サービスのプライバシーポリシーに従って管理されます。
-        当方はその情報を別途保管・利用しません。
-      </p>
-      <p>
-        寄付収益の一部は盗撮被害者支援団体へ寄付されます。
-        寄付先・金額は年次報告として公開します。
-      </p>
-    </section>
+      <!-- 3 -->
+      <section>
+        <h2>3. 要求する権限</h2>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>権限</th>
+                <th>用途</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>カメラ</td>
+                <td>撮影機能の動作に必要です</td>
+              </tr>
+              <tr>
+                <td>ストレージ（写真の保存）</td>
+                <td>撮影した写真をデバイスに保存するために必要です</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p>上記以外の権限は一切要求しません。</p>
+      </section>
 
-    <!-- 6 -->
-    <section>
-      <h2>6. 未成年者のプライバシー</h2>
-      <p>
-        本アプリは13歳未満のお子様から意図的に情報を収集することはありません。
-        13歳未満のお子様が本アプリを使用する場合は、保護者の監督のもとでご使用ください。
-      </p>
-    </section>
+      <!-- 4 -->
+      <section>
+        <h2>4. 第三者への情報提供</h2>
+        <p>
+          当方は取得した情報を第三者に販売・提供・開示することはありません。
+          本アプリには広告ネットワーク・アナリティクスSDK・外部APIへの通信機能が含まれていません。
+        </p>
+      </section>
 
-    <!-- 7 -->
-    <section>
-      <h2>7. プライバシーポリシーの変更</h2>
-      <p>
-        本ポリシーは予告なく変更される場合があります。
-        変更があった場合は、本ページの「最終更新日」を更新し、
-        アプリのアップデートノートにてお知らせします。
-        継続してアプリをご利用いただいた場合、変更後のポリシーに同意したものとみなします。
-      </p>
-    </section>
+      <!-- 5 -->
+      <section>
+        <h2>5. 寄付について</h2>
+        <p>
+          本アプリは任意の寄付によって運営されています。
+          寄付の受付はアプリ外の外部決済サービスを通じて行われます。
+          寄付時に入力する情報（氏名・メールアドレス等）は、当該決済サービスのプライバシーポリシーに従って管理されます。
+          当方はその情報を別途保管・利用しません。
+        </p>
+        <p>
+          寄付収益の一部は盗撮被害者支援団体へ寄付されます。
+          寄付先・金額は年次報告として公開します。
+        </p>
+        <p>
+          寄付はこちらから↓
+          <a href="https://buy.stripe.com/bJe28k5vm6s6f9A8O8cQU00"
+            >https://buy.stripe.com/bJe28k5vm6s6f9A8O8cQU00</a
+          >
+        </p>
+      </section>
 
-    <!-- 8 -->
-    <section>
-      <h2>8. お問い合わせ</h2>
+      <!-- 6 -->
+      <section>
+        <h2>6. 未成年者のプライバシー</h2>
+        <p>
+          本アプリは13歳未満のお子様から意図的に情報を収集することはありません。
+          13歳未満のお子様が本アプリを使用する場合は、保護者の監督のもとでご使用ください。
+        </p>
+      </section>
+
+      <!-- 7 -->
+      <section>
+        <h2>7. プライバシーポリシーの変更</h2>
+        <p>
+          本ポリシーは予告なく変更される場合があります。
+          変更があった場合は、本ページの「最終更新日」を更新し、
+          アプリのアップデートノートにてお知らせします。
+          継続してアプリをご利用いただいた場合、変更後のポリシーに同意したものとみなします。
+        </p>
+      </section>
+
+      <!-- 8 -->
+      <section>
+        <h2>8. お問い合わせ</h2>
         <div class="contact-box">
           <p>
             本ポリシーに関するご質問・ご意見は以下のフォームよりお問い合わせください。
           </p>
           <br />
-          <p><a href="https://docs.google.com/forms/d/e/1FAIpQLSdOHcafNqpIRzqoJ93X_oR1WU3mhFa7EWw3vu3CLqdPpF_NsA/viewform?usp=header">お問い合わせフォーム</a></p>
+          <p>
+            <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLSdOHcafNqpIRzqoJ93X_oR1WU3mhFa7EWw3vu3CLqdPpF_NsA/viewform?usp=header"
+              >お問い合わせフォーム</a
+            >
+          </p>
           <br />
           <p style="font-size: 13px; color: var(--sub)">
             ※お問い合わせフォームはGoogle社のサービスを使用しています。
             入力いただいたメールアドレスはご返信のためにのみ使用し、その他の目的には使用いたしません。
           </p>
         </div>
-    </section>
+      </section>
+    </main>
 
-  </main>
-
-  <footer>
-    © 2026 マナーカメラ — All rights reserved.
-  </footer>
-
-</body>
+    <footer>© 2026 マナーカメラ — All rights reserved.</footer>
+  </body>
 </html>
